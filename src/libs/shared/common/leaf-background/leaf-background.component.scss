@@ -1,0 +1,34 @@
+.leaves {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.leaves svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.leaves .l1 { fill: var(--leaf-1); }
+.leaves .l2 { fill: var(--leaf-2); }
+.leaves .l3 { fill: var(--leaf-3); }
+.leaves .l4 { fill: var(--leaf-4); }
+
+.leaves .sway {
+  transform-box: fill-box;
+  transform-origin: 0% 50%;
+  animation: sway 7s ease-in-out infinite alternate;
+}
+
+.leaves .sway.b {
+  animation-duration: 9s;
+  animation-delay: -3s;
+}
+
+@keyframes sway {
+  from { rotate: -4deg; }
+  to { rotate: 5deg; }
+}

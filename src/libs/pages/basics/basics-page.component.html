@@ -1,0 +1,27 @@
+<section class="block">
+  <div class="wrap">
+    <div class="head">
+      <h1>{{ mandalaText.title }}</h1>
+      <p>{{ mandalaText.description }}</p>
+    </div>
+    <div class="two mandala-layout">
+      <div class="mandala">
+        <div class="mgrid" role="group" [attr.aria-label]="mandalaText.directionsLabel">
+          <button class="cell" *ngFor="let cell of mandalaCells" type="button" [class.active]="selectedMandala.id === cell.id" [class.center]="cell.center" [attr.aria-pressed]="selectedMandala.id === cell.id" [attr.aria-label]="cell.label" (click)="selectMandala(cell)">
+            <span class="g">{{ cell.icon }}</span>
+            <span class="d">{{ cell.short }}</span>
+          </button>
+        </div>
+        <div class="compass"><span>{{ mandalaText.compass.west }}</span><span>{{ mandalaText.compass.north }}</span><span>{{ mandalaText.compass.east }}</span></div>
+      </div>
+      <article class="mdetail" aria-live="polite">
+        <p class="label">{{ mandalaText.selectedZoneLabel }}</p>
+        <h2>{{ selectedMandala.label }} <small>{{ selectedMandala.symbol }}</small></h2>
+        <dl>
+          <dt>{{ mandalaText.qualityLabel }}</dt><dd>{{ selectedMandala.purpose }}</dd>
+          <dt>{{ mandalaText.considerLabel }}</dt><dd>{{ selectedMandala.focus }}</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<section class="block">
+  <div class="wrap">
+    <div class="consultation-panel">
+      <p class="label">{{ text.label }}</p>
+      <h1>{{ text.title }}</h1>
+      <ol class="steps">
+        <li *ngFor="let step of text.steps"><span class="k">{{ step.number }}</span><div><h2>{{ step.title }}</h2><p>{{ step.description }}</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,223 @@
+{
+  "brand": {
+    "name": "Stella Space",
+    "subtitle": "VASTU • JYOTISH • INTERIORS",
+    "homeLabel": "Stella Space home"
+  },
+  "common": {
+    "mainNavigation": "Main navigation"
+  },
+  "nav": {
+    "home": "Home",
+    "approach": "Approach",
+    "mandala": "Mandala",
+    "consultations": "Consultations",
+    "about": "About"
+  },
+  "routeTitles": {
+    "home": "Home | Stella Space",
+    "approach": "Approach | Stella Space",
+    "mandala": "Mandala | Stella Space",
+    "consultations": "Consultations | Stella Space",
+    "about": "About | Stella Space"
+  },
+  "hero": {
+    "title": "Vastu & interiors aligned to your stars",
+    "subtitle": "Calmer homes, read from your kundali and dasha",
+    "imageAlt": "Bright living room with a yellow sofa, natural light, and indoor plants"
+  },
+  "approach": {
+    "title": "What a home can hold",
+    "description": "Four areas of life, each tied to a zone of the home and a planet in your chart. Calm comes first, because every other area rests on a settled mind.",
+    "pillars": [
+      {
+        "number": "01",
+        "tag": "First",
+        "title": "Calm mind",
+        "description": "Less stress and anxiety, steadier emotions, a home that lets you switch off.",
+        "zone": "North-west · Moon · North-east · Jupiter"
+      },
+      {
+        "number": "02",
+        "tag": "Second",
+        "title": "Rest & health",
+        "description": "Deeper sleep, a grounded bedroom, rooms that restore energy instead of draining it.",
+        "zone": "South-west · Rahu · Earth"
+      },
+      {
+        "number": "03",
+        "tag": "Third",
+        "title": "Family harmony",
+        "description": "Fewer frictions, warmer shared spaces, a kitchen and living room that bring people together.",
+        "zone": "South-east · Venus · Centre"
+      },
+      {
+        "number": "04",
+        "tag": "Fourth",
+        "title": "Career & growth",
+        "description": "Focus, recognition and momentum, read from your 10th house and running dasha.",
+        "zone": "North · Mercury · East · Sun"
+      }
+    ],
+    "principle": {
+      "label": "Renting or already living there",
+      "title": "Change the energy, not the walls.",
+      "imageAlt": "Bright, uncluttered living room with natural light and indoor plants",
+      "description": "Rebuilding a house to fix vastu is costly and rarely necessary. Classical vastu offers corrections, and thoughtful interior styling does the rest:",
+      "items": [
+        "Placement: move beds, desks, stoves and heavy furniture into supportive zones.",
+        "Light and colour: brighten the north-east and ground the south-west.",
+        "Clearing: remove clutter, broken items and blocked corners.",
+        "Living elements: bring in plants, natural materials and fresh air where they belong."
+      ]
+    }
+  },
+  "mandala": {
+    "title": "Vastu mandala",
+    "description": "Select a direction to explore its traditional association and a practical way to think about that part of the home.",
+    "directionsLabel": "Vastu directions",
+    "selectedZoneLabel": "Selected zone",
+    "qualityLabel": "Quality",
+    "considerLabel": "Consider",
+    "compass": {
+      "west": "W",
+      "north": "N",
+      "east": "E"
+    },
+    "cells": [
+      {
+        "id": "north-west",
+        "short": "NW",
+        "icon": "NW",
+        "label": "North-west",
+        "symbol": "Moon",
+        "purpose": "Calm, movement and emotional steadiness",
+        "focus": "Open air, gentle light and uncluttered circulation.",
+        "center": false
+      },
+      {
+        "id": "north",
+        "short": "N",
+        "icon": "N",
+        "label": "North",
+        "symbol": "Mercury",
+        "purpose": "Career and clarity",
+        "focus": "Keep it light, ordered and focused for work and flow.",
+        "center": false
+      },
+      {
+        "id": "north-east",
+        "short": "NE",
+        "icon": "NE",
+        "label": "North-east",
+        "symbol": "Jupiter",
+        "purpose": "Growth and wisdom",
+        "focus": "Use natural light, spiritual objects and calm storage.",
+        "center": false
+      },
+      {
+        "id": "west",
+        "short": "W",
+        "icon": "W",
+        "label": "West",
+        "symbol": "Saturn",
+        "purpose": "Stability and boundaries",
+        "focus": "Keep surfaces simple and support long-term habits.",
+        "center": false
+      },
+      {
+        "id": "centre",
+        "short": "C",
+        "icon": "ॐ",
+        "label": "Centre",
+        "symbol": "Brahma",
+        "purpose": "Shared purpose and balance",
+        "focus": "Keep open, light and uncluttered for everyday harmony.",
+        "center": true
+      },
+      {
+        "id": "east",
+        "short": "E",
+        "icon": "E",
+        "label": "East",
+        "symbol": "Sun",
+        "purpose": "Vitality and visibility",
+        "focus": "Use light, fresh air and active living rhythms.",
+        "center": false
+      },
+      {
+        "id": "south-west",
+        "short": "SW",
+        "icon": "SW",
+        "label": "South-west",
+        "symbol": "Rahu",
+        "purpose": "Grounding and health",
+        "focus": "Use heavy furniture, warmth and restful materials.",
+        "center": false
+      },
+      {
+        "id": "south",
+        "short": "S",
+        "icon": "S",
+        "label": "South",
+        "symbol": "Mars",
+        "purpose": "Energy and action",
+        "focus": "Keep it deliberate, balanced and low on chaos.",
+        "center": false
+      },
+      {
+        "id": "south-east",
+        "short": "SE",
+        "icon": "SE",
+        "label": "South-east",
+        "symbol": "Venus",
+        "purpose": "Family and nourishment",
+        "focus": "Support the kitchen and shared rituals with warmth.",
+        "center": false
+      }
+    ]
+  },
+  "consult": {
+    "label": "Consultations",
+    "title": "How a Stella Space consultation works",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Map your chart",
+        "description": "We look at the birth chart, the current dasha and the energies active in your home."
+      },
+      {
+        "number": "02",
+        "title": "Read the rooms",
+        "description": "We align the rooms, habits and objects with the house zones that best support your life."
+      },
+      {
+        "number": "03",
+        "title": "Design the correction",
+        "description": "We suggest the smallest possible changes: placement, light, layout and material choices."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Stella Space",
+    "description": "Practical vastu for real homes and real lives, grounded in astrology without becoming rigid or theoretical.",
+    "glossary": [
+      {
+        "name": "Vastu",
+        "transliteration": "वास्तु",
+        "description": "Directional balance, building energies and the way a home can hold your life without friction."
+      },
+      {
+        "name": "Kundali",
+        "transliteration": "कुण्डली",
+        "description": "Your birth chart, used to determine the areas of life most supported by your current home and timing."
+      },
+      {
+        "name": "Dasha",
+        "transliteration": "दशा",
+        "description": "Planetary timing that tells us which rooms and actions matter most in the present season of life."
+      }
+    ]
+  },
+  "footer": "Stella Space blends vastu, astrology and interiors into practical home guidance for clearer rooms, steadier habits and a home that supports growth."
+}

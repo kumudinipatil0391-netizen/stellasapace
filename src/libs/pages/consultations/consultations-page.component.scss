@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.consultation-panel {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}

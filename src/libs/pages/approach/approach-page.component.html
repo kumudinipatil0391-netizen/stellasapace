@@ -1,0 +1,32 @@
+<section class="block">
+  <div class="wrap">
+    <div class="head">
+      <h2>{{ text.title }}</h2>
+      <p>{{ text.description }}</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar" *ngFor="let pillar of text.pillars">
+        <span class="label">{{ pillar.number }} · {{ pillar.tag }}</span>
+        <h3>{{ pillar.title }}</h3>
+        <p>{{ pillar.description }}</p>
+        <span class="z">{{ pillar.zone }}</span>
+        <img class="pillar-image" [src]="'assets/pillar-' + pillar.number + '.jpg'" [alt]="pillar.title + ' interior photo'">
+      </article>
+    </div>
+    <div class="paths">
+      <div class="principle">
+        <div>
+          <p class="label">{{ text.principle.label }}</p>
+          <h3>{{ text.principle.title }}</h3>
+        </div>
+        <img class="principle-image" src="assets/energy-home.png" [alt]="text.principle.imageAlt">
+        <div>
+          <p>{{ text.principle.description }}</p>
+          <ul>
+            <li *ngFor="let item of text.principle.items">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

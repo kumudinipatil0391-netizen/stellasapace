@@ -1,0 +1,39 @@
+<div class="page-shell">
+  <app-leaf-background></app-leaf-background>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" routerLink="/focus" [attr.aria-label]="t.brand.homeLabel">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 220 170">
+            <path d="M30 80 L110 22 L190 80 L170 145 L50 145 Z" fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round"/>
+            <path d="M52 140 H168" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+            <g transform="translate(110,90)">
+              <path d="M0 -26 L6 -6 L26 0 L6 6 L0 26 L-6 6 L-26 0 L-6 -6 Z" fill="#f2bf4c" stroke="#f2bf4c" stroke-width="1"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-wordmark">
+          <span class="brand-name">{{ t.brand.name }}</span>
+          <span class="brand-subtitle">{{ t.brand.subtitle }}</span>
+        </span>
+      </a>
+      <nav [attr.aria-label]="t.common.mainNavigation">
+        <a routerLink="/focus" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ t.nav.home }}</a>
+        <a routerLink="/approach" routerLinkActive="active">{{ t.nav.approach }}</a>
+        <a routerLink="/mandala" routerLinkActive="active">{{ t.nav.mandala }}</a>
+        <a routerLink="/consult" routerLinkActive="active">{{ t.nav.consultations }}</a>
+        <a routerLink="/about" routerLinkActive="active">{{ t.nav.about }}</a>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>{{ t.footer }}</p>
+    </div>
+  </footer>
+</div>

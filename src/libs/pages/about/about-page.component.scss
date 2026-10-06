@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+:host .head {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+:host .head p {
+  margin-inline: auto;
+}
+
+:host .gloss div {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+<section class="block">
+  <div class="wrap">
+    <div class="head">
+      <h2>{{ text.title }}</h2>
+      <p>{{ text.description }}</p>
+    </div>
+    <dl class="gloss">
+      <div *ngFor="let term of text.glossary"><dt>{{ term.name }} <small>{{ term.transliteration }}</small></dt><dd>{{ term.description }}</dd></div>
+    </dl>
+  </div>
+</section>

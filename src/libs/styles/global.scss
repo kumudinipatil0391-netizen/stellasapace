@@ -1,0 +1,27 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: 'Figtree', 'Segoe UI', sans-serif;
+  background: #dcf0e4;
+  color: #123a30;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+app-stella-space {
+  display: block;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
