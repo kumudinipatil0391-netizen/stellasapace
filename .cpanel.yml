@@ -1,4 +1,7 @@
+---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/stelarsl/public_html/
+    - /usr/local/bin/npm install
+    - /usr/local/bin/npm run build
     - /bin/cp -R dist/stella-space/* $DEPLOYPATH
