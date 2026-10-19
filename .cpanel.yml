@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/stelarsl/public_html/
-    - /usr/local/bin/npm install
-    - /usr/local/bin/npm run build
-    - /bin/cp -R dist/stella-space/* $DEPLOYPATH
+    - /opt/cpanel/ea-nodejs22/bin/npm install
+    - /opt/cpanel/ea-nodejs22/bin/npm run build
+    - /bin/cp -R dist/stella-space/. $DEPLOYPATH

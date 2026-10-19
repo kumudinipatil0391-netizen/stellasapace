@@ -1,0 +1,40 @@
+.blog-list {
+  display: grid;
+  gap: 16px;
+}
+
+.blog-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.blog-card-copy > :last-child {
+  margin-bottom: 0;
+}
+
+.blog-card h3 {
+  margin: 8px 0;
+  font-size: clamp(21px, 3vw, 28px);
+}
+
+.blog-card h3 a {
+  color: var(--ink);
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+}
+
+.blog-card h3 a:hover {
+  text-decoration-color: var(--kumkum);
+}
+
+.blog-card > p:not(.label) {
+  color: var(--muted);
+}
+
+.read-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 600;
+}

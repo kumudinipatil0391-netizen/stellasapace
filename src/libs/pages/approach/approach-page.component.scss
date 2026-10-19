@@ -24,9 +24,9 @@
 .pillar-image {
   display: block;
   width: 100%;
-  aspect-ratio: 0.92;
+  max-width: 257px;
+  height: auto;
   margin: auto auto 12px;
-  object-fit: cover;
 }
 
 :host .principle > div:first-child,

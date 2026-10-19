@@ -84,7 +84,7 @@ dist/stella-space/
 
 This project includes a `.cpanel.yml` file for cPanel Git deployment.
 
-### Update before deployment
+### Configure deployment
 
 Open `.cpanel.yml` and replace:
 
@@ -107,6 +107,13 @@ with your actual cPanel username, for example:
 3. Create or connect the Git repository in cPanel.
 4. Ensure the repository contains the `.cpanel.yml` file.
 5. Trigger deployment from cPanel or push to the cPanel-managed repository.
+
+The deployment task checks for cPanel Node.js 22, 20, or 18 under
+`/opt/cpanel/ea-nodejs*/bin/npm`, then falls back to `/usr/local/bin/npm`.
+Use a Node.js version supported by Angular 19 (18.19+, 20.11+, or 22+).
+If none of these npm binaries is available, enable a supported Node.js version
+in cPanel and retry deployment. Dependencies are installed from `package-lock.json`
+with `npm ci` before the production build.
 
 ### Example deployment config
 

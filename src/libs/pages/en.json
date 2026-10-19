@@ -11,6 +11,7 @@
     "home": "Home",
     "approach": "Approach",
     "mandala": "Mandala",
+    "blogs": "Blogs",
     "consultations": "Consultations",
     "about": "About"
   },
@@ -18,6 +19,8 @@
     "home": "Home | Stella Space",
     "approach": "Approach | Stella Space",
     "mandala": "Mandala | Stella Space",
+    "blogs": "Blogs | Stella Space",
+    "blogArticle": "Blog | Stella Space",
     "consultations": "Consultations | Stella Space",
     "about": "About | Stella Space"
   },

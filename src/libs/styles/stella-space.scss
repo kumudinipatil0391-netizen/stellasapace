@@ -92,7 +92,7 @@ h1, h2, h3 {
 
 .top {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
@@ -111,6 +111,74 @@ nav {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
+}
+
+.main-nav {
+  justify-content: flex-end;
+  margin: 0 0 4px;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown > summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 15px;
+  list-style: none;
+}
+
+.nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown > summary span {
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.nav-dropdown[open] > summary span {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.nav-dropdown > summary:hover,
+.nav-dropdown.active > summary {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--kumkum);
+  text-underline-offset: 6px;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 12px);
+  left: -12px;
+  display: grid;
+  min-width: 160px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+}
+
+.nav-dropdown-menu a {
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a.active {
+  background: rgb(0 0 0 / 4%);
+  text-decoration: none;
 }
 
 nav a {

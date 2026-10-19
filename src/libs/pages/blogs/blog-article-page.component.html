@@ -1,0 +1,26 @@
+<section class="block">
+  <div class="wrap">
+    <article class="blog-article" *ngIf="article as post; else missingArticle">
+      <a class="back-link" routerLink="/home/blogs">← All blogs</a>
+      <p class="label">Stella Space · Home &amp; living</p>
+      <h2>{{ post.title }}</h2>
+      <p class="article-intro">{{ post.excerpt }}</p>
+      <img class="article-image" [src]="post.image" [alt]="post.imageAlt">
+      <section class="article-section" *ngFor="let section of post.sections">
+        <h3 *ngIf="section.heading">{{ section.heading }}</h3>
+        <p *ngFor="let paragraph of section.paragraphs">{{ paragraph }}</p>
+        <ul *ngIf="section.items?.length">
+          <li *ngFor="let item of section.items">{{ item }}</li>
+        </ul>
+      </section>
+      <a class="back-link bottom-link" routerLink="/home/blogs">← Back to all blogs</a>
+    </article>
+    <ng-template #missingArticle>
+      <div class="missing-article">
+        <h2>Blog not found</h2>
+        <p>This article may have moved or the link may be incorrect.</p>
+        <a routerLink="/home/blogs">Browse all blogs</a>
+      </div>
+    </ng-template>
+  </div>
+</section>
